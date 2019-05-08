@@ -1,0 +1,255 @@
+
+.logo {
+    background-color: #FC988B;
+    width: 590px;
+    align-content: center;
+    padding-right: 10px;
+    padding-left: 400px;
+    padding-top: 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container {
+    width: 1000px;
+    display: grid;
+    grid-template: 50px 400px 200px 400px 200px 625px 625px 700px 750px / repeat(8, 1fr);
+}
+
+.nav li {
+    display: inline;
+    background-color: #E06F5C;
+    color: #fff;
+    font-family: "Exo", sans-serif;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.nav {
+    grid-area: 1 / 1 / 2 / span 8;
+    background-color: #E06F5C;
+    color: #fff;
+}
+
+#map {
+    z-index: 2;
+    padding-top: -25px;
+    padding-right: 500px;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url("newmexico12web.jpg") center center no-repeat;
+    background-size: cover;
+    grid-area: 2 / 1 / 5 / span 8;
+    text-align: center;
+    z-index: 1;
+}
+
+#car {
+    position: relative;
+    grid-area: 3 / 1 / 4 / 9;
+    padding-top: 240px;
+    justify-self: start;
+    padding-right: 1000px;
+    animation-name: car;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes car {
+    0% {left: 0px; opacity: 1}
+    95% {left: 970px; opacity: 1}
+    96% {left: 975px; opacity: 1}
+    100% {left: 1000px; opacity: 0}
+
+}
+
+h1 {
+    font-family: "Acme", sans-serif;
+    font-size: 48pt;
+    text-align: center;
+    font-weight: 300px;
+    color: #fff;
+    align-self: end;;
+    height: 80px;
+    background-color: rgba(224, 111, 92, 0.75);
+    grid-area: 3 / 1 / 4 / 9;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    z-index: 4;
+}
+
+#intro {
+    grid-area: 3 / 4 / 4 / 6;
+    z-index: 5;
+    margin-top: -25px;
+    padding-top: 30px;
+}
+
+h4 {
+font-family: "Exo", sans-serif;
+text-align: left;
+font-weight: 300;
+width: 370px;
+padding: 20px;
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+#time {
+    grid-area: 5 / 1 / span 1 / span 2;
+    justify-content: center;
+    background-color: #067682;
+    border-radius: 0 0 0 10px;
+}
+
+#distance {
+    grid-area: 5 / 3 / span 1 / span 2;
+    justify-content: center;
+    background-color: #066782;
+}
+
+#landscapes {
+    grid-area: 5 / 5 / span 1 / span 2;
+    justify-content: center;
+    background-color: #065682;
+}
+
+#interests{
+    grid-area: 5 / 7 / span 1 / span 2;
+    justify-content: center;
+    background-color: #068261;
+    border-radius: 0 0 10px 0;
+}
+
+h5 {
+    font-family: "Acme", sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    font-weight: 300px;
+    color: #fff;
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+h6  {
+    font-family: "Exo", sans-serif;
+    font-size: 12pt;
+    text-align: center;
+    font-weight: 100;
+    line-height: 1.25;
+    color: #fff;
+}
+
+p.landscapes  {
+    font-family: "Exo", sans-serif;
+    font-size: 12pt;
+    text-align: center;
+    line-height: 1.25;
+    color: #fff;
+    font-weight: 100;
+}
+
+#Albuquerque{
+    border: 3pt outset #E06F5C;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px;
+    background-color: #eee;
+    box-shadow: 5px 5px 5px grey;
+    grid-area: 6 / 1 / span 1 / span 4;
+}
+
+#Bisti{
+    grid-area: 6 / 5 / span 1 / span 4;
+    border: 3pt outset #E06F5C;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px;
+    background-color: #eee;
+    box-shadow: 5px 5px 5px grey;
+}
+#Chaco{
+    grid-area: 7 / 1 / span 1 / span 4;
+    border: 3pt outset #E06F5C;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px;
+    background-color: #eee;
+    box-shadow: 5px 5px 5px grey;
+}
+#Bandelier{
+    grid-area: 7 / 5 / span 1 / span 4;
+    border: 3pt outset #E06F5C;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px;
+    background-color: #eee;
+    box-shadow: 5px 5px 5px grey;
+}
+#SantaFe{
+    grid-area: 8 / 1 / span 1 / span 4;
+    border: 3pt outset #E06F5C;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px;
+    background-color: #eee;
+    box-shadow: 5px 5px 5px grey;
+}
+#TentRocks{
+    grid-area: 8 / 5 / span 1 / span 4;
+    border: 3pt outset #E06F5C;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px;
+    background-color: #eee;
+    box-shadow: 5px 5px 5px grey;
+}
+#Carlsbad{
+    grid-area: 9 / 1 / span 1 / span 4;
+    border: 3pt outset #E06F5C;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px;
+    background-color: #eee;
+    box-shadow: 5px 5px 5px grey;
+}
+#WhiteSands{
+    grid-area: 9 / 5 / span 1 / span 4;
+    border: 3pt outset #E06F5C;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px;
+    background-color: #eee;
+    box-shadow: 5px 5px 5px grey;
+}
+
+h2 {
+    font-family: "Acme", sans-serif;
+    font-size: 14pt;
+    font-weight: 100;
+    color: #E06F5C;
+    line-height: .75;
+}
+
+h3 {
+    font-family: "Acme", sans-serif;
+    font-size: 18pt;
+    font-weight: 100;
+    line-height: .75;
+    color: #444;
+}
+
+p {
+    font-family: "Exo", sans-serif;
+    font-size: 12pt;
+}
+img.day1 {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
